@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Draw() {
+function Share() {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function Draw() {
     )
 }
 
-export default Draw;
+export default Share
