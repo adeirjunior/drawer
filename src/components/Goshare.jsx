@@ -10,17 +10,34 @@ const ShareBtn = styled.div`
     right: 0;
     z-index: 10;
 
-    &:hover span{
+    @media only screen and (min-width:1000px){
+
+        &:hover span{
         width:40px;
+        }
+        &:hover span svg path{
+            fill: #fff;
+        }
+
+        &:hover div::before{
+            border-right: solid 0 #EE4545;
+        }
+
     }
-    &:hover span svg path{
-        fill: #fff;
+    .clicked{
+        span{
+        width:40px;
+        }
+        span svg path{
+            fill: #fff;
+        }
+
+        div::before{
+            border-right: solid 0 #EE4545;
+        }
     }
 
-    &:hover div::before{
-        border-right: solid 0 #EE4545;
-    }
-
+    
         div::before{
             content: '';
             display: inline-block;
@@ -63,10 +80,14 @@ const ShareBtn = styled.div`
 
 
 function Goshare() {
+    let select = 1;
+
+    const links = ['/','/share']
+
     return (
         <ShareBtn>
             <div></div>
-            <Link to='/'>
+            <Link to={links[select]}>
                 <span>
                     <Share />
                 </span>

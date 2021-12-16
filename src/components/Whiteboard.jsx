@@ -3,8 +3,7 @@ import CanvasDraw from 'react-canvas-draw';
 
 function Whiteboard() {
     return (
-        <CanvasDraw hideGrid="true" canvasWidth={1500}>
-        </CanvasDraw>
+        <CanvasDraw style={{cursor:'none',width:'100%', height:'85vh'}} hideGrid />
     )
 }
 
