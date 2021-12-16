@@ -15,6 +15,10 @@ const NavB = styled.div`
         color: white;
         text-decoration: none;
         cursor: pointer;
+
+        &::before{
+            content:;
+        }
     }
 `;
 

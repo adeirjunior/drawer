@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Loading />
       <Navigator />
-      <SlideRoutes>
+      <SlideRoutes duration={300}>
         <Route path="/" element={<Draw />} />
         <Route path="/share" element={<Share />} />
       </SlideRoutes>

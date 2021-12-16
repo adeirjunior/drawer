@@ -11,6 +11,7 @@ const Ftb = styled.footer`
     justify-content: center;
     user-select: none;
     color: gray;
+    z-index:1000;
 `;
 
 function Footer() {
